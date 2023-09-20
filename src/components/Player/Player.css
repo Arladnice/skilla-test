@@ -1,0 +1,183 @@
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 352px;
+  width: 100%;
+  height: 48px;
+  border-radius: 48px;
+  background-color: #eaf0fa;
+  cursor: auto;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.record__time {
+  margin: 0 0 0 19px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 145%;
+  width: 36px;
+  text-align: end;
+}
+
+.record__button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.record__button_play {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 24px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.record__icon {
+  transition: all 0.2s;
+}
+
+.record__icon:active {
+  transform: scale(1);
+}
+
+.record__icon {
+  width: 8px;
+  height: 10px;
+}
+
+.record__icon_play {
+  background-image: url(../../icons/button-play.svg);
+}
+
+.record__icon_pause {
+  height: 8px;
+  background-image: url(../../icons/button-pause.svg);
+}
+
+.record__statusbar {
+  max-width: 164px;
+  width: 100%;
+  height: 4px;
+  background: #adbfdf;
+  border-radius: 50px;
+  margin: 0 18px 0 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.record__rewind {
+  height: 4px;
+  background-color: #002cfb;
+}
+
+.record__progress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0;
+  top: 10px;
+  left: 100px;
+  position: absolute;
+}
+
+.record__button_download {
+  width: 13px;
+  height: 16px;
+}
+
+.record__button_download svg path {
+  transition: all 0.2s;
+}
+
+.record__button_download:hover svg path {
+  fill: #002cfb;
+}
+
+.record__button_close {
+  width: 14px;
+  height: 14px;
+  margin: 0 17px 0 22px;
+}
+
+.record__button_close svg path {
+  transition: all 0.2s;
+}
+
+.record__button_close:hover svg path {
+  fill: #002cfb;
+}
+
+.alertR-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alertR-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 200ms, transform 200ms;
+}
+.alertR-exit {
+  opacity: 1;
+}
+.alertR-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 200ms, transform 200ms;
+}
+
+@media screen and (max-width: 1681px) {
+  .record {
+    height: 42px;
+  }
+
+  .record__time {
+    font-size: 13px;
+  }
+
+  .record__button_download {
+    width: 11px;
+    height: 14px;
+  }
+  .record__button_download svg {
+    width: 11px;
+    height: 14px;
+  }
+
+  .record__button_close {
+    width: 11px;
+    height: 11px;
+    margin: 0 14px 0 16px;
+  }
+
+  .record__button_close svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .record__statusbar {
+    max-width: calc(100% - 151px);
+    margin-right: 12px;
+  }
+
+  .record__time {
+    margin-left: 11px;
+  }
+
+  .record__progress {
+    font-size: 11px;
+  }
+
+  .record__button_play {
+    margin-left: 8px;
+    width: 22px;
+    height: 22px;
+  }
+}
